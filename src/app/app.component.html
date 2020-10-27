@@ -1,0 +1,61 @@
+Interpolation Demo :
+=====================
+<br>
+My Age : {{age}}
+<br>
+{{greeting}}
+<br>
+{{gender}}
+<br>
+{{isIndian}}
+<br>
+priceLessThan : {{priceLessThan}}
+<br>
+priceGreaterThan : {{priceGreaterThan}}
+<br>
+{{birthday | date:"MMM/dd/yyyy"}}
+<hr>
+<p>
+	Ages Array values :
+	<br>
+fist element in array : {{ages[0]}}
+	<br>
+second element in array : {{ages[1]}}
+	<br>
+{{ages[2]}}
+	<br>
+{{ages[3]}}
+</p>
+	<hr>
+	PIPE:
+	=====
+	{{user | json}}
+	<br><br>
+	Name : {{user.name | uppercase}}
+	<br>
+	Age : {{user.age}}
+	<br>
+  Address : {{user.address | lowercase}}
+
+	<hr>
+	{{getAge()}}
+	{{GetProductByBrand()}}
+	<hr>
+	<img src={{loadImage()}}>
+	<hr>
+	Attributes :
+
+	<div *ngIf="isIndian">
+		<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/383px-Flag_of_India.svg.png">
+</div>
+
+		<div *ngIf="isAmerican">
+			<img src="https://cdn.britannica.com/33/4833-004-297297B9/Flag-United-States-of-America.jpg">
+</div>
+
+			<input
+    type="text"
+    value="something"
+    id="txtUserName"
+    name ="username"
+    >
