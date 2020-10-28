@@ -10,11 +10,22 @@ export class UserRegistrationComponent implements OnInit {
 
   ngOnInit() {}
 
-  userName = "please enter user name";
+  // userName = "please enter user name";
+  // emailPlaceholder = "please enter email";
+
   // user = {
   //   userName: "santosh",
   //   email: "2mymail.santosh@gmail.com",
   //   age: 35,
   //   gender: "M"
   // };
+
+  saveUser(evt: any) {
+    // handel click even here
+    console.log("hi");
+  }
+
+  txtUserNameChange() {
+    console.log("text box change triggered");
+  }
 }
