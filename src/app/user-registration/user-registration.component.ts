@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-user-registration',
-  templateUrl: './user-registration.component.html',
-  styleUrls: ['./user-registration.component.css']
+  selector: "app-user-registration",
+  templateUrl: "./user-registration.component.html",
+  styleUrls: ["./user-registration.component.css"]
 })
 export class UserRegistrationComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
+  userName = "please enter user name";
+  // user = {
+  //   userName: "santosh",
+  //   email: "2mymail.santosh@gmail.com",
+  //   age: 35,
+  //   gender: "M"
+  // };
 }
