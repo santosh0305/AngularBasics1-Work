@@ -16,7 +16,7 @@ export class AppComponent {
   priceLessThan = 35000.45; //float
   priceGreaterThan = 35000.56; //float
   birthday = new Date(1988, 3, 15);
-  // JSON
+  // JSON Object
   user = {
     name: "santosh",
     age: "37",
