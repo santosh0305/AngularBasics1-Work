@@ -25,7 +25,12 @@ export class UserRegistrationComponent implements OnInit {
     console.log("hi");
   }
 
-  txtUserNameChange() {
-    console.log("text box change triggered");
+  txtUserNameChange(evt: any) {
+    let userName = evt.target.value;
+    if (userName.length < 3) {
+      alert("Please enter username more than 3 chars");
+    }
+    console.log(userName);
+    console.log(evt);
   }
 }
